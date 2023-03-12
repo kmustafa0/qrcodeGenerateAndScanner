@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Sono', sans-serif;   
+    font-family: 'Sono', sans-serif;
 }
 body {
     display: flex;
@@ -51,9 +51,21 @@ header p {
 .form button {
     color: #fff;
     cursor: pointer;
-    margin-top: 20px;
-    font-size: 17px;
+    margin-top: 10px;
+    font-size: 15px;
     background: #3EB489;
+}
+.buttons {
+    margin: 10px 20px;
+    display: flex;
+    justify-content: center;
+}
+.buttons button {
+    margin: 10px 10px;
+}
+.buttons a {
+    color: #fff;
+    text-decoration: none;
 }
 .wrapper .qr-code {
     display: flex;

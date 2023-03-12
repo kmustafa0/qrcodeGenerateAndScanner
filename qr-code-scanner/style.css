@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sono', sans-serif;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #e3f2fd;
+}
+.wrapper {
+    height: 370px;
+    width: 420px;
+    border-radius: 7px;
+    background: #3EB489;
+    padding: 30px 30px 35px;
+    transition: height 0.2 ease;
+}
+.wrapper .button-link {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+.wrapper .button-link a {
+    text-decoration: none;
+    color: #3EB489;
+}
+.wrapper .button-link button {
+    color: #3EB489;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 15px;
+    background: #fff;
+    border: none;
+    width: 150px;
+    height: 30px;
+}
+.wrapper.active {
+    height: 565px;
+}
+.wrapper form {
+    height: 210px;
+    cursor: pointer;
+    background: #fff;
+    display: flex;
+    text-align: center;
+    border-radius: 7px;
+    align-items: center;
+    justify-content: center;
+    transition: height 0.2 ease;
+
+}
+.wrapper.active form {
+    height: 225px;
+    pointer-events: none;
+}
+form img {
+    display: none;
+    max-width: 148px;
+}
+.wrapper.active form img {
+    display: block;
+}
+.wrapper.active form .content {
+    display: none;
+}
+form .content i {
+    color: #3EB489;
+    font-size: 55px;
+}
+form .content p {
+    color: #3EB489;
+    font-size: 16px;
+    margin-top: 15px;
+}
+.wrapper .details {
+    opacity: 0;
+    margin-top: 25px;
+    pointer-events: none;
+}
+.wrapper.active .details {
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.5s 0.05s ease;
+}
+.details textarea {
+    width: 100%;
+    height: 128px;
+    outline: none;
+    color: #fff;
+    font-size: 18px;
+    background: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+}
+.details .buttons {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.buttons button {
+    height: 55px;
+    outline:none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    color: #3EB489;
+    background: #fff;
+    border-radius: 5px;
+    width: calc(100% / 2 - 10px);
+}
