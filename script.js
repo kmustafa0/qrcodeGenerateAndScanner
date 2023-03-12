@@ -1,7 +1,9 @@
 const wrapper = document.querySelector('.wrapper'),
 generateBtn = wrapper.querySelector('.form button')
 qrInput = wrapper.querySelector('.form input');
-qrImg = wrapper.querySelector('.qr-code img');
+qrImg = wrapper.querySelector('.qr-code img'),
+scanQrCodeBtn = wrapper.querySelector('.scan-btn'),
+btnLink = scanQrCodeBtn.querySelector('a');
 
 generateBtn.addEventListener('click', () => {
     let qrValue = qrInput.value;
@@ -19,3 +21,4 @@ qrInput.addEventListener('keyup', () => {
         wrapper.classList.remove("active");
     }
 })
+scanQrCodeBtn.addEventListener('click', () => btnLink.click());

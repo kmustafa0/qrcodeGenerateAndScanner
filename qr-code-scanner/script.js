@@ -3,7 +3,9 @@ form = wrapper.querySelector('form'),
 fileInp = form.querySelector('input'),
 infoText = form.querySelector('p'),
 copyBtn = wrapper.querySelector('.copy'),
-closeBtn = wrapper.querySelector('.close');
+closeBtn = wrapper.querySelector('.close'),
+buttonLink = wrapper.querySelector('.button-link');
+buttonLinkA = buttonLink.querySelector('a');
 
 function fetchRequest(formData, file) {
     infoText.innerText = "Scanning QR Code..."
@@ -45,3 +47,4 @@ copyBtn.addEventListener('click', () => {
 
 form.addEventListener('click', () => fileInp.click());
 closeBtn.addEventListener('click', () => wrapper.classList.remove("active"));
+buttonLink.addEventListener('click', () => buttonLinkA.click());
