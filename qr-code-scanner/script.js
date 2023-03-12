@@ -9,7 +9,7 @@ buttonLinkA = buttonLink.querySelector('a');
 
 function fetchRequest(formData, file) {
     infoText.innerText = "Scanning QR Code..."
-    fetch("http://api.qrserver.com/v1/read-qr-code/", {
+    fetch("https://api.qrserver.com/v1/read-qr-code/", {
         method: "POST", body: formData
     }).then(res => res.json()).then(result => {
         result = result[0].symbol[0].data;
